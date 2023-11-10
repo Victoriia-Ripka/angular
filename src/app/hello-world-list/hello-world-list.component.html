@@ -1,1 +1,11 @@
-<p>hello-world-list works!</p>
+<ul>
+    <li *ngFor="let phrase of phraseList"
+    (click)="onSelect(phrase)"
+    class="list">
+        {{phrase.value}}
+    </li>
+</ul>
+
+<div *ngIf="selectedPhraseLanguage" class="info">
+    Selected Language: {{selectedPhraseLanguage}}
+</div>

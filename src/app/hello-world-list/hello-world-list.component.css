@@ -1,0 +1,24 @@
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list{
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.list:hover,
+.list:focus {
+    font-weight: bold;
+    color: mediumblue;
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: mediumblue;
+}
