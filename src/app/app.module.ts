@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { XyzComponent } from './xyz/xyz.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
@@ -19,7 +18,6 @@ import { Page3Component } from './page3/page3.component';
   // всі дерективи, класи і компоненти, що ми створили
   declarations: [
     AppComponent,
-    XyzComponent,
     HeaderComponent,
     FooterComponent,
     MainComponent,
@@ -35,10 +33,10 @@ import { Page3Component } from './page3/page3.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      {path: '/', component: AppComponent},
-      {path: '/hello-world', component: HelloWorldListComponent},
-      {path: '/something', component: AppComponent},
-      {path: '', redirectTo: "/", pathMatch: "full"}
+      {path: '', component: MainComponent},
+      {path: 'page1', component: Page1Component},
+      {path: 'page2', component: Page2Component},
+      {path: 'page3', redirectTo: "/", pathMatch: "full"}
     ])
   ],
   // сервіси, які даний модуль додає до всіх сервісів додатка 
