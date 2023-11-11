@@ -5,13 +5,9 @@ import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { MainComponent } from './main/main.component';
-import { HelloWorldListComponent } from './hello-world-list/hello-world-list.component';
-import { Page1Component } from './page1/page1.component';
-import { Page2Component } from './page2/page2.component';
-import { Page3Component } from './page3/page3.component';
+import { HeaderComponent, FooterComponent, MainComponent } from './components';
+// import { HelloWorldListComponent } from './components/hello-world-list/hello-world-list.component';
+import { PagesModule, routs } from './pages/index';
 
 // декоратор визначає як модуль повинен правюувати
 @NgModule({ 
@@ -21,10 +17,7 @@ import { Page3Component } from './page3/page3.component';
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    HelloWorldListComponent,
-    Page1Component,
-    Page2Component,
-    Page3Component
+    // HelloWorldListComponent,
   ],
   // компоненти, що будуть видимі для інших модулів
   exports: [],
@@ -32,12 +25,8 @@ import { Page3Component } from './page3/page3.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot([
-      {path: '', component: MainComponent},
-      {path: 'page1', component: Page1Component},
-      {path: 'page2', component: Page2Component},
-      {path: 'page3', redirectTo: "/", pathMatch: "full"}
-    ])
+    PagesModule,
+    RouterModule.forRoot(routs)
   ],
   // сервіси, які даний модуль додає до всіх сервісів додатка 
   providers: [],
