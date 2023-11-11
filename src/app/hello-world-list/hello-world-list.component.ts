@@ -11,8 +11,8 @@ const PHRASES: Phrase[] = [
 
 @Component({
   selector: 'hello-world-list',
-  templateUrl: './hello-world-list.component.html',
-  styleUrls: ['./hello-world-list.component.css']
+  templateUrl: 'hello-world-list.component.html',
+  styleUrls: ['hello-world-list.component.css']
 })
 
 export class HelloWorldListComponent {
