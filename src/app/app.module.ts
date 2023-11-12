@@ -5,8 +5,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent, FooterComponent, MainComponent } from './components';
-// import { HelloWorldListComponent } from './components/hello-world-list/hello-world-list.component';
+import { HeaderComponent, FooterComponent } from './components';
 import { PagesModule, routs } from './pages/index';
 
 // декоратор визначає як модуль повинен правюувати
@@ -16,8 +15,6 @@ import { PagesModule, routs } from './pages/index';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent,
-    // HelloWorldListComponent,
   ],
   // компоненти, що будуть видимі для інших модулів
   exports: [],
