@@ -7,11 +7,12 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
 })
 export class TimerComponent {
     private intervalObject: any
-    private currentValue: number = 0
+    public currentValue: number = 0
 
     @Input()
     interval: number = 1000
 
+    // EventEmitter - визначає, що властивість є подією
     @Output()
     tick: EventEmitter<number> = new EventEmitter()
 

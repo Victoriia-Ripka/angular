@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent, FooterComponent } from './components';
 import { PagesModule, routs } from './pages/index';
-import { CardComponent } from './components/card/card.component';
 
 // декоратор визначає як модуль повинен правюувати
 @NgModule({ 
@@ -15,8 +14,7 @@ import { CardComponent } from './components/card/card.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
-    CardComponent,
+    FooterComponent
   ],
   // компоненти, що будуть видимі для інших модулів
   exports: [],
