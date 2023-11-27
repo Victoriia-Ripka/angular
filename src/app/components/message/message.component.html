@@ -1,0 +1,8 @@
+<div *ngIf="visible">
+    <h2>Message</h2>
+    <p>
+        <!-- контент що записан в середині тегів компонента message -->
+        <ng-content></ng-content>
+    </p>
+    <button (click)="hide()">Hide it</button>
+</div>
