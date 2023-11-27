@@ -3,9 +3,10 @@ import { CommonModule } from "@angular/common"
 
 import { HelloWorldListComponent, CardComponent } from "../components/index"
 import { Page1Component, Page2Component, Page3Component, ChapterComponent, Counter, TimerComponent } from "./index"
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
-    imports: [CommonModule],
+    imports: [CommonModule, MatCardModule],
     declarations: [Page1Component, Page2Component, Page3Component, 
         HelloWorldListComponent, CardComponent, TimerComponent, 
         ChapterComponent, Counter],

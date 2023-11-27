@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent, FooterComponent } from './components';
 import { PagesModule, routs } from './pages/index';
 
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 // декоратор визначає як модуль повинен правюувати
 @NgModule({ 
   // всі дерективи, класи і компоненти, що ми створили
@@ -23,6 +25,7 @@ import { PagesModule, routs } from './pages/index';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
+    MatSlideToggleModule,
     RouterModule.forRoot(routs)
   ],
   // сервіси, які даний модуль додає до всіх сервісів додатка 
