@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['ng-style.component.css']
 })
 export class NgStyleComponent {
-
+  getStyles() {
+    let styles = {
+      "background-color": "yellow",
+      "font-weight": "bold",
+      "font-size": "20px"
+    }
+    return styles
+  }
 }

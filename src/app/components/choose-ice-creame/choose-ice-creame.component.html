@@ -1,0 +1,26 @@
+<h4>ngSwitch</h4>
+
+<div [ngSwitch]="topping" class="choosed">
+    <div *ngSwitchCase="'Strawberry'">
+        Strawberry
+    </div>
+    <div *ngSwitchCase="'Chocolate'">
+        Chocolate
+    </div>
+    <div *ngSwitchCase="'Bluberries'">
+        Bluberries
+    </div>
+    <div *ngSwitchCase="'Bubble gum'">
+        Bubble gum
+    </div>
+    <div *ngSwitchCase="'Vanile'">
+        Vanile
+    </div>
+    <div *ngSwitchDefault="">
+        no topping
+    </div>
+</div>
+
+<p>Make your icecreame delicious. </p>
+<p>Add topping <input type="text" [(ngModel)]="topping"/></p> 
+
