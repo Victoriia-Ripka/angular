@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent, FooterComponent } from './components';
@@ -26,6 +27,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     AppRoutingModule,
     PagesModule,
     MatSlideToggleModule,
+    // ReactiveFormsModule,
     RouterModule.forRoot(routs)
   ],
   // сервіси, які даний модуль додає до всіх сервісів додатка 

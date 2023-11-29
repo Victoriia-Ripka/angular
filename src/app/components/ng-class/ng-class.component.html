@@ -1,0 +1,26 @@
+<h3>ngClass</h3>
+
+<div>
+    <form>
+        <input type="checkbox" [(ngModel)]="settings.accent" name="accent" />
+        <label for="accent"> Accent </label>
+        <br />
+        <input type="checkbox" [(ngModel)]="settings.error" name="error" />
+        <label for="error"> Error </label>
+        <br />
+        <input type="checkbox" [(ngModel)]="settings.highlighted" name="highlighted" />
+        <label for="highlighted"> Highlighted </label>
+        <br />
+    </form>
+    <div>
+        <p [class.accent]="settings.accent" [class.error]="settings.error" [class.highlighted]="settings.highlighted">
+            1. Box with two-way binding by [class.accent]="settings.accent"
+        </p>
+        <p [ngClass]="settings">
+            2. Box with two-way binding by ngClass
+        </p>
+        <p [ngClass]="['accent', 'error']">
+            3. Box by [ngClass]="['accent', 'error']"
+        </p>
+    </div>
+</div>
