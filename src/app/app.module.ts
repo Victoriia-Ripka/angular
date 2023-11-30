@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent, FooterComponent } from './components';
 import { PagesModule, routs } from './pages/index';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { CounterService } from './counter.service';
+import { CommonModule } from "@angular/common";
 
 // декоратор визначає як модуль повинен правюувати
 @NgModule({ 
@@ -20,15 +22,15 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
   exports: [],
   // компоненти, що необхідні для роботи цього модуля
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     PagesModule,
     MatSlideToggleModule,
-    // ReactiveFormsModule,
     RouterModule.forRoot(routs)
   ],
   // сервіси, які даний модуль додає до всіх сервісів додатка 
-  providers: [],
+  providers: [CounterService],
   // визначає кореневий компонент
   bootstrap: [AppComponent]
 })

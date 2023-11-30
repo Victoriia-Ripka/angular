@@ -7,6 +7,4 @@ import { Component } from '@angular/core';
 })
 export class Page4Component {
   private classes: Array <string> = ['active', 'main']
-  
-
 }
