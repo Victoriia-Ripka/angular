@@ -21,5 +21,5 @@ export class Counter {
     increment(): void {
         this.counterValue += this.counterStep
     }
-    
+
 }

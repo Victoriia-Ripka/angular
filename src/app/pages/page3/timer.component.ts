@@ -17,12 +17,12 @@ export class TimerComponent {
     tick: EventEmitter<number> = new EventEmitter()
 
     onStart() {
-        if(this.intervalObject) return
+        if (this.intervalObject) return
         this.intervalObject = setInterval(() => this.callback(), this.interval)
     }
 
     onStop() {
-        if(!this.intervalObject) return
+        if (!this.intervalObject) return
         clearInterval(this.intervalObject)
         this.intervalObject = false
     }
